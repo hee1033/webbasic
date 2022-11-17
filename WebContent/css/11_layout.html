@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#wrapper{
+				width: 1000px;
+				margin: 0px auto;
+				border: 1px solid black;
+			}
+			
+			#header{
+				border: 1px solid black;
+				height: 50px;
+			}
+			
+			#footer{
+				border: 1px solid black;
+				clear: both;
+			}
+			#center{
+				display: flex;
+			}
+			
+			.sidebar{
+				height: 200px;
+				border: 1px solid black;
+				flex-grow: 1;
+			}
+			
+			.content{
+				height: 200px;
+				border: 1px solid black;
+				flex-grow: 3;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">header</div>
+			
+			<div id="center">
+				<div class="sidebar">this is sidebar</div>
+				<div class="content">this is content</div>
+			</div>
+			
+			<div id="footer">this is footer</div>
+		</div>
+	</body>
+</html>
